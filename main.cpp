@@ -1,12 +1,5 @@
 #include <iostream>
-#include <SFML/Graphics.hpp>
-
-int main() {
-
-    return 0;
-}
-
-
+#include "Menu.h"
 //int main()
 //{
 //    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
@@ -29,3 +22,9 @@ int main() {
 //
 //    return 0;
 //}
+
+int main() {
+    Menu menu;
+    menu.ejecutar();
+    return 0;
+}
