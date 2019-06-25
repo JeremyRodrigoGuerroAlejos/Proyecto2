@@ -54,15 +54,14 @@ void Menu::removerObjeto() {
     auto obj = tierra.removerObjeto(nombre);  //-- separa el objeto de la tierra
     if (obj == nullptr) {
         cout << "Objeto No existe\n";
+    } else {
+        delete obj;
+        cout << "Objeto: " << nombre << " ha sido removido\n";
 
-        else {
-            delete obj;
-            cout << "Objeto: " << nombre << " ha sido removido\n";
-
-            esperar();
-        }
-
-        void Menu::dibujarMapa() {
+        esperar();
+    }
+}
+void Menu::dibujarMapa () {
             limpiar();
             tierra.actualizarTierra();
             tierra.dibujarTierra();
@@ -70,9 +69,8 @@ void Menu::removerObjeto() {
             tierra.imprimirObjetos();
             cout << '\n';
             esperar();
-        }
-    }
 }
+
 void Menu::ejecutar() {
     do {
         imprimirMenu();

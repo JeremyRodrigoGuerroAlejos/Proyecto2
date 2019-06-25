@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Menu.cpp
+Menu.h
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Menu.h
+iostream
+-
+string
+-
+cstdio
+-
+
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Menu.h
+Tierra.h
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Tierra.h
+Tipos.h
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Tipos.h
+
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Objeto.h
+iostream
+-
+Tipos.h
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Tipos.h
+
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Tierra.h
+iostream
+-
+vector
+-
+Tipos.h
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Tipos.h
+Objeto.h
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Objeto.h
+
+C:/Users/rodri/Desktop/UTEC/2019-1/POO/pushear/Proyecto 2/Tipos.h
+string
+-
+
