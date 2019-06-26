@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2"
+CMAKE_SOURCE_DIR = C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled.dir/depend.make
@@ -58,55 +58,55 @@ include CMakeFiles/untitled.dir/flags.make
 
 CMakeFiles/untitled.dir/main.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\main.cpp.obj -c "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\main.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\main.cpp
 
 CMakeFiles/untitled.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\main.cpp" > CMakeFiles\untitled.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\main.cpp > CMakeFiles\untitled.dir\main.cpp.i
 
 CMakeFiles/untitled.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\main.cpp" -o CMakeFiles\untitled.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\main.cpp -o CMakeFiles\untitled.dir\main.cpp.s
 
 CMakeFiles/untitled.dir/Menu.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Menu.cpp.obj: ../Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Menu.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Menu.cpp.obj -c "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Menu.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Menu.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Menu.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Menu.cpp
 
 CMakeFiles/untitled.dir/Menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Menu.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Menu.cpp" > CMakeFiles\untitled.dir\Menu.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Menu.cpp > CMakeFiles\untitled.dir\Menu.cpp.i
 
 CMakeFiles/untitled.dir/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Menu.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Menu.cpp" -o CMakeFiles\untitled.dir\Menu.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Menu.cpp -o CMakeFiles\untitled.dir\Menu.cpp.s
 
 CMakeFiles/untitled.dir/Tierra.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Tierra.cpp.obj: ../Tierra.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Tierra.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Tierra.cpp.obj -c "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Tierra.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Tierra.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Tierra.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Tierra.cpp
 
 CMakeFiles/untitled.dir/Tierra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Tierra.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Tierra.cpp" > CMakeFiles\untitled.dir\Tierra.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Tierra.cpp > CMakeFiles\untitled.dir\Tierra.cpp.i
 
 CMakeFiles/untitled.dir/Tierra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Tierra.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Tierra.cpp" -o CMakeFiles\untitled.dir\Tierra.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Tierra.cpp -o CMakeFiles\untitled.dir\Tierra.cpp.s
 
 CMakeFiles/untitled.dir/Objeto.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Objeto.cpp.obj: ../Objeto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Objeto.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Objeto.cpp.obj -c "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Objeto.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Objeto.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Objeto.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Objeto.cpp
 
 CMakeFiles/untitled.dir/Objeto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Objeto.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Objeto.cpp" > CMakeFiles\untitled.dir\Objeto.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Objeto.cpp > CMakeFiles\untitled.dir\Objeto.cpp.i
 
 CMakeFiles/untitled.dir/Objeto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Objeto.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\Objeto.cpp" -o CMakeFiles\untitled.dir\Objeto.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Objeto.cpp -o CMakeFiles\untitled.dir\Objeto.cpp.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
@@ -126,7 +126,7 @@ untitled.exe: CMakeFiles/untitled.dir/build.make
 untitled.exe: CMakeFiles/untitled.dir/linklibs.rsp
 untitled.exe: CMakeFiles/untitled.dir/objects1.rsp
 untitled.exe: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable untitled.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable untitled.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/untitled.dir/clean:
 .PHONY : CMakeFiles/untitled.dir/clean
 
 CMakeFiles/untitled.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2" "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2" "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug" "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug" "C:\Users\rodri\Desktop\UTEC\2019-1\POO\pushear\Proyecto 2\cmake-build-debug\CMakeFiles\untitled.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2 C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2 C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles\untitled.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled.dir/depend
 
