@@ -8,6 +8,8 @@
 #include <vector>
 #include "Tipos.h"
 #include "Objeto.h"
+#include <SFML/Graphics.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
 using namespace std;
 // Valores constantes
 const TipoEntero ALTURA = 21;
@@ -16,7 +18,9 @@ const TipoCaracter COLOR ='.';
 
 class Tierra {
 private:
-    vector<vector<char>> plano;
+//    vector<vector<char>> plano;
+//    vector<Objeto*> objetos;
+    sf::RenderWindow* plano;
     vector<Objeto*> objetos;
 public:
     Tierra();

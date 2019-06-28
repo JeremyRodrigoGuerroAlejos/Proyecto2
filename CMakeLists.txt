@@ -5,8 +5,8 @@ project(SFMLApp)
 set(CMAKE_CXX_STANDARD 17)
 
 
-set(SFML_INCLUDE_DIR "SFML-2.5.1/include")
-set(SFML_LIBRARY_DIR "SFML-2.5.1/lib")
+#set(SFML_INCLUDE_DIR "SFML-2.5.1/include")
+#set(SFML_LIBRARY_DIR "SFML-2.5.1/lib")
 set(SFML_DIR "SFML-2.5.1/lib/cmake/SFML")
 
 link_directories(SFML_LIBRARY_DIR)
