@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled
+# Target rules for targets named SFMLApp
 
 # Build rule for target.
-untitled: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 untitled
-.PHONY : untitled
+SFMLApp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 SFMLApp
+.PHONY : SFMLApp
 
 # fast build rule for target.
-untitled/fast:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
-.PHONY : untitled/fast
+SFMLApp/fast:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/build
+.PHONY : SFMLApp/fast
 
 Menu.obj: Menu.cpp.obj
 
@@ -128,7 +128,7 @@ Menu.obj: Menu.cpp.obj
 
 # target to build an object file
 Menu.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Menu.cpp.obj
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Menu.cpp.obj
 .PHONY : Menu.cpp.obj
 
 Menu.i: Menu.cpp.i
@@ -137,7 +137,7 @@ Menu.i: Menu.cpp.i
 
 # target to preprocess a source file
 Menu.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Menu.cpp.i
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Menu.cpp.i
 .PHONY : Menu.cpp.i
 
 Menu.s: Menu.cpp.s
@@ -146,7 +146,7 @@ Menu.s: Menu.cpp.s
 
 # target to generate assembly for a file
 Menu.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Menu.cpp.s
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
 Objeto.obj: Objeto.cpp.obj
@@ -155,7 +155,7 @@ Objeto.obj: Objeto.cpp.obj
 
 # target to build an object file
 Objeto.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Objeto.cpp.obj
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Objeto.cpp.obj
 .PHONY : Objeto.cpp.obj
 
 Objeto.i: Objeto.cpp.i
@@ -164,7 +164,7 @@ Objeto.i: Objeto.cpp.i
 
 # target to preprocess a source file
 Objeto.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Objeto.cpp.i
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Objeto.cpp.i
 .PHONY : Objeto.cpp.i
 
 Objeto.s: Objeto.cpp.s
@@ -173,7 +173,7 @@ Objeto.s: Objeto.cpp.s
 
 # target to generate assembly for a file
 Objeto.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Objeto.cpp.s
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Objeto.cpp.s
 .PHONY : Objeto.cpp.s
 
 Tierra.obj: Tierra.cpp.obj
@@ -182,7 +182,7 @@ Tierra.obj: Tierra.cpp.obj
 
 # target to build an object file
 Tierra.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Tierra.cpp.obj
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Tierra.cpp.obj
 .PHONY : Tierra.cpp.obj
 
 Tierra.i: Tierra.cpp.i
@@ -191,7 +191,7 @@ Tierra.i: Tierra.cpp.i
 
 # target to preprocess a source file
 Tierra.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Tierra.cpp.i
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Tierra.cpp.i
 .PHONY : Tierra.cpp.i
 
 Tierra.s: Tierra.cpp.s
@@ -200,7 +200,7 @@ Tierra.s: Tierra.cpp.s
 
 # target to generate assembly for a file
 Tierra.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Tierra.cpp.s
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Tierra.cpp.s
 .PHONY : Tierra.cpp.s
 
 main.obj: main.cpp.obj
@@ -209,7 +209,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -218,7 +218,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -227,7 +227,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -236,8 +236,8 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... SFMLApp
 	@echo ... edit_cache
-	@echo ... untitled
 	@echo ... rebuild_cache
 	@echo ... Menu.obj
 	@echo ... Menu.i

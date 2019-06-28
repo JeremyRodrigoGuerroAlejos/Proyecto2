@@ -57,6 +57,7 @@ include CMakeFiles/untitled.dir/progress.make
 include CMakeFiles/untitled.dir/flags.make
 
 CMakeFiles/untitled.dir/main.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/main.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
 CMakeFiles/untitled.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\main.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\main.cpp
@@ -70,6 +71,7 @@ CMakeFiles/untitled.dir/main.cpp.s: cmake_force
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\main.cpp -o CMakeFiles\untitled.dir\main.cpp.s
 
 CMakeFiles/untitled.dir/Menu.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Menu.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
 CMakeFiles/untitled.dir/Menu.cpp.obj: ../Menu.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Menu.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Menu.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Menu.cpp
@@ -83,6 +85,7 @@ CMakeFiles/untitled.dir/Menu.cpp.s: cmake_force
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Menu.cpp -o CMakeFiles\untitled.dir\Menu.cpp.s
 
 CMakeFiles/untitled.dir/Tierra.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Tierra.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
 CMakeFiles/untitled.dir/Tierra.cpp.obj: ../Tierra.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Tierra.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Tierra.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Tierra.cpp
@@ -96,6 +99,7 @@ CMakeFiles/untitled.dir/Tierra.cpp.s: cmake_force
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Tierra.cpp -o CMakeFiles\untitled.dir\Tierra.cpp.s
 
 CMakeFiles/untitled.dir/Objeto.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Objeto.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
 CMakeFiles/untitled.dir/Objeto.cpp.obj: ../Objeto.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Objeto.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Objeto.cpp.obj -c C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\Objeto.cpp

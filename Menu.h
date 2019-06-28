@@ -14,7 +14,7 @@ T input(string label) {
     cout << label;
     cin >> value;
     cin.clear();
-    //cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+    cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
     return value;
 }
 
