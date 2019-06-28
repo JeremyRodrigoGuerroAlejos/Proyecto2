@@ -7,6 +7,7 @@
 
 #include "Tierra.h"
 #include "Tipos.h"
+#include <SFML/Graphics.hpp>
 
 template <typename T>
 T input(string label) {

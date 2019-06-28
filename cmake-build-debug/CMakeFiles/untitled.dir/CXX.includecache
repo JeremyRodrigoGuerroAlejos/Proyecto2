@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Menu.cpp
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Menu.cpp
 Menu.h
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Menu.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Menu.h
 iostream
 -
 string
@@ -16,21 +16,25 @@ string
 cstdio
 -
 
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Menu.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Menu.h
 Tierra.h
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tierra.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tierra.h
 Tipos.h
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tipos.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tipos.h
 
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Objeto.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Objeto.cpp
+Objeto.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Objeto.h
+
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Objeto.h
 iostream
 -
 Tipos.h
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tipos.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tipos.h
 
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tierra.cpp
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tierra.cpp
 Tierra.h
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tierra.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tierra.h
 string
 -
 iomanip
@@ -38,17 +42,23 @@ iomanip
 algorithm
 -
 
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tierra.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tierra.h
 iostream
 -
 vector
 -
 Tipos.h
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tipos.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tipos.h
 Objeto.h
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Objeto.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Objeto.h
 
-C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tipos.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Tipos.h
 string
 -
+
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/main.cpp
+iostream
+-
+Menu.h
+C:/Users/rodri/Desktop/Proyecto2-master (1)/Proyecto2-master/Menu.h
 

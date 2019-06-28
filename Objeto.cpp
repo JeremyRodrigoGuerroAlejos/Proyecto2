@@ -1,5 +1,6 @@
 #include "Objeto.h"
-
+#include <SFML/Graphics.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
 Objeto::Objeto(): color{}, posX{}, posY{}  {}
 
 Objeto::Objeto(const TipoString& nombre, TipoCaracter color,
