@@ -1,62 +1,77 @@
-#include "Tierra.h"
+//
+// Created by utec on 21/06/19.
+//
+
 #include <string>
 #include <iomanip>
+#include <map>
 #include <algorithm>
-#include <SFML/Graphics.hpp>
-#include <SFML/Graphics/RenderWindow.hpp>
+#include <cmath>
+#include "Objeto.h"
+#include "Tierra.h"
+
+
+map<char, sf::Color> listaColores = {
+        {'R', sf::Color::Red},
+        {'G', sf::Color::Green},
+        {'B', sf::Color::Blue}};
+
+
 using namespace std;
 
-map<char, sf::Color> colores= {
-        {'R',sf::Color::Red},
-        {'B',sf::Color::Blue},
-        {'G',sf::Color::Green},
-};
-
-Tierra::Tierra() {
+Tierra::Tierra() : altura{}, ancho{} {
     plano = nullptr;
-    //plano.resize(ALTURA);
-//    for (auto& item: plano)
-//        item.resize(ANCHO);
 }
 
-Tierra::Tierra(TipoEntero altura, TipoEntero ancho) {
-    plano = new sf::RenderWindow(
-            sf::VideoMode(ancho, altura), "Proyecto Final");
-//    plano.resize(altura);
-//    for (auto& item: plano)
-//        item.resize(ancho);
+Tierra::Tierra(TipoEntero altura, TipoEntero ancho) : altura{altura}, ancho{ancho} {
+    plano = new sf::RenderWindow();
 }
 
 Tierra::~Tierra() {
     delete plano;
-    plano = nullptr;
 }
 
-void Tierra::adicionarObjeto(Objeto* objeto) {
+void Tierra::adicionarObjeto(Objeto *objeto) {
     objetos.emplace_back(objeto);
 }
 
-
-Objeto* Tierra::removerObjeto(string& nombre) {
-    // Si vector esta vacio
+Objeto *Tierra::removerObjeto(string &nombre) {
+// Si vector esta vacio
     if (objetos.size() == 0)
         return nullptr;
-    // Buscando objeto
+// Buscando objeto
     auto iter = find_if(begin(objetos), end(objetos),
                         [&nombre](Objeto *obj) { return obj->getNombre() == nombre; });
     if (iter != end(objetos)) {
-        // Eliminando la referencia al puntero objeto dentro del vector objetos
+// Eliminando la referencia al puntero objeto dentro del vector objetos
         objetos.erase(iter);
-        //-- si encuentra al objeto lo separa del vector,
-        //-- (no libera de memoria el objeto encontrado), esto se hará en el menú,
-        //-- donde fue asignado, debido a que el objeto no es parte sino el objeto es un visitante.
+//-- si encuentra al objeto lo separa del vector,
+//-- (no libera de memoria el objeto encontrado), esto se hará en el menú,
+//-- donde fue asignado, debido a que el objeto no es parte sino el objeto es un visitante.
         return *iter;
     }
-    else{
-        // Si vector esta vacio
-        return nullptr;
-    }
+// Si vector esta vacio
+    return nullptr;
 }
+
+
+
+//double Tierra::cantidadObjetosClase(){
+//    for (auto& item: objetos){auto i = 0;}
+//
+//}
+//
+//Objeto* Tierra::buscarTipo(){
+//    if (objetos.size() <4){
+//        return nullptr;
+//    }
+//    else{
+//        return nullptr;
+//    }
+////    return *iter;
+//}
+
+
 
 void Tierra::imprimirObjetos() {
     int i = 0;
@@ -66,55 +81,144 @@ void Tierra::imprimirObjetos() {
              << item->mostrarPosicion()
              << " Color = " << item->getColor() << '\n';
         i++;
-
     }
 }
+
 void Tierra::actualizarTierra() {
-    for (auto &item: objetos) {
+    plano->clear();
+    for (auto obj: objetos) {
         sf::CircleShape shape(10);
-        shape.setFillColor(colores[item->getColor()]);
-        shape.setPosition(item->getPosX(), item->getPosY());
+        shape.setPosition(static_cast<float>(obj->getPosX()), static_cast<float>(obj->getPosY()));
+        shape.setFillColor(listaColores[obj->getColor()]);
         plano->draw(shape);
-//    for (auto &row: plano)
-//        for (auto &cell: row)
-//            cell = COLOR;
-//
-//    for (auto& item: objetos)
-//        plano[item->getPosX()][item->getPosY()]
-//                = item->getColor();
     }
+    plano->display();
 }
-
 
 void Tierra::dibujarTierra() {
 
-    if(plano == nullptr) return;
-
-    while (plano->isOpen())
-    {
-        sf::Event event;
-        while (plano->pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                plano->close();
-        }
-
-        plano->clear();
-        actualizarTierra();
+    // Verifica si plano ha sido creado anteriormente
+    if (!plano->isOpen())
+        plano->create(sf::VideoMode(ancho, altura), "Proyecto Final - Presione [ESC] para salir... ");
+    else
         plano->display();
+
+    // Bucle principal
+    while (plano->isOpen()) {
+        capturarEventos();
+        actualizarTierra();
     }
 }
 
-TipoEntero Tierra::getAltura() {
-    return plano->getSize().y;
+void Tierra::encontrar(TipoEntero x, TipoEntero y) {
+    vector<Raices > aux1;
+    vector<TipoString> aux2;
+    for(Objeto* i:objetos){
+        aux1.push_back(sqrt(((i->getPosX())^2)*((i->getPosY())^2)));
+        aux2.push_back(i->getNombre());
+    }
+    float temporal;
+    string temp;
+    for (int i = 0;i < aux1.size(); i++){
+        for (int j = 0; j< aux1.size()-1; j++){
+            if (aux1[j] > aux1[j+1]){
+                temporal = aux1[j];
+                temp=aux2[j];
+                aux1[j] = aux1[j+1];
+                aux2[j]=aux2[j+1];
+                aux1[j+1] = temporal;
+                aux2[j+1]=temp;
+            }
+        }
+    }
+    for (int i = 0;  (i<aux1.size()) && (i<3); ++i) {
+        cout<<aux2[i]<<" a "<<aux1[i]<<" metros"<<endl;
+    }
+    cout<<endl;
 }
 
-TipoEntero Tierra::getAncho(){
-    return plano[0].getSize().x;
+void Tierra::Ubicar3max() {
+    vector<TipoEntero > aux1;
+    vector<TipoString> aux2;
+    for (Objeto *i:objetos) {
+        aux1.push_back(i->getCalificacion());
+        aux2.push_back(i->getNombre());
+    }
+    TipoEntero temporal;
+    TipoString temp;
+
+    for (int i = 0; i < aux1.size(); i++) {
+        for (int j = 0; j < aux1.size() - 1; j++) {
+            if (aux1[j] < aux1[j + 1]) { // Ordena el array de mayor a menor, cambiar el "<" a ">" para ordenar de menor a mayor
+                temporal = aux1[j];
+                temp = aux2[j];
+                aux1[j] = aux1[j + 1];
+                aux2[j] = aux2[j + 1];
+                aux1[j + 1] = temporal;
+                aux2[j + 1] = temp;
+            }
+        }
+    }
+    for (int i = 0; (i < aux1.size()) && (i < 3); ++i) {
+        cout << aux2[i] << " tiene " << aux1[i] << " de calificacion" << endl;
+    }
+    cout << endl;
+}
+
+void Tierra::UbicarMejoresTipos() {
+    TipoEntero ah=0,ar=0,am=0;
+    TipoString bh,br,bm;
+    for (Objeto *tipo:objetos) {
+        if (tipo->getColor() == 'R'){
+            if(ah<tipo->getCalificacion()) {
+                ah = tipo->getCalificacion();
+                bh=tipo->getNombre();
+            }
+        }
+        else if(tipo->getColor() == 'G'){
+            if(ar<tipo->getCalificacion()) {
+                ar = tipo->getCalificacion();
+                br=tipo->getNombre();
+            }
+        }
+        else if(tipo->getColor() == 'B'){
+            if(am<tipo->getCalificacion()) {
+                am = tipo->getCalificacion();
+                bm=tipo->getNombre();
+            }
+        }
+    }
+    cout<<"Los Establecimientos por Tipo Mejor Valorados son: "<<endl;
+    cout<<"Hotel: "<<bh<<endl;
+    cout<<"Restaurant: "<<br<<endl;
+    cout<<"Museo: "<<bm<<endl;
+}
+
+TipoEntero Tierra::getAltura() {
+    return (altura);
+}
+
+TipoEntero Tierra::getAncho() {
+    return (ancho);
 }
 
 TipoEntero Tierra::getCantidadObjectos() {
-    return objetos.size();
+    return (objetos.size());
 }
 
+void Tierra::capturarEventos() {
+    sf::Event event{};
 
+    while (plano->pollEvent(event)) {
+
+        switch (event.type) {
+            case sf::Event::Closed:
+                plano->close();
+                break;
+            case sf::Event::KeyPressed:
+                if (event.key.code == sf::Keyboard::Escape)
+                    plano->close();
+                break;
+        }
+    }
+}

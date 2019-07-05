@@ -1,16 +1,18 @@
 //
-// Created by rodri on 25/6/2019.
+// Created by utec on 21/06/19.
 //
 
-#ifndef AGREGACION_TIERRA_H
-#define AGREGACION_TIERRA_H
+#ifndef GAME_TIERRA_H
+#define GAME_TIERRA_H
+
 #include <iostream>
 #include <vector>
 #include "Tipos.h"
 #include "Objeto.h"
 #include <SFML/Graphics.hpp>
-#include <SFML/Graphics/RenderWindow.hpp>
+
 using namespace std;
+
 // Valores constantes
 const TipoEntero ALTURA = 21;
 const TipoEntero ANCHO  = 21;
@@ -18,11 +20,13 @@ const TipoCaracter COLOR ='.';
 
 class Tierra {
 private:
-//    vector<vector<char>> plano;
-//    vector<Objeto*> objetos;
+    int altura;
+    int ancho;
     sf::RenderWindow* plano;
     vector<Objeto*> objetos;
+    void capturarEventos();
 public:
+    void actualizarTierra();
     Tierra();
     Tierra(TipoEntero altura, TipoEntero ancho);
     virtual ~Tierra();
@@ -33,7 +37,11 @@ public:
     TipoEntero getAncho();
     TipoEntero getCantidadObjectos();
     void dibujarTierra();
-    void actualizarTierra();
+    void encontrar(TipoEntero x, TipoEntero y);
+    void Ubicar3max();
+    void UbicarMejoresTipos();
 };
 
-#endif //AGREGACION_TIERRA_H
+
+#endif
+

@@ -1,15 +1,17 @@
 //
-// Created by rodri on 25/6/2019.
+// Created by utec on 21/06/19.
 //
 
-#ifndef AGREGACION_TIPOS_H
-#define AGREGACION_TIPOS_H
+#ifndef GAME_TIPOS_H
+#define GAME_TIPOS_H
 
 #include <string>
 using namespace std;
+
 // Definiendo alias
 using TipoEntero = int;
 using TipoCaracter = char;
 using TipoString = string;
+using Raices  = double;
 
-#endif //AGREGACION_TIPOS_H
+#endif

@@ -1,16 +1,21 @@
 //
-// Created by rodri on 25/6/2019.
+// Created by utec on 21/06/19.
 //
 
-#ifndef AGREGACION_MENU_H
-#define AGREGACION_MENU_H
+#ifndef GAME_CONTROLADOR_H
+#define GAME_CONTROLADOR_H
 
+#include <limits>
 #include "Tierra.h"
 #include "Tipos.h"
-#include <SFML/Graphics.hpp>
+#include "Hotel.h"
+#include "Museo.h"
+#include "Restaurant.h"
+
+using namespace std;
 
 template <typename T>
-T input(string label) {
+T input(const string& label) {
     T value;
     cout << label;
     cin >> value;
@@ -19,29 +24,21 @@ T input(string label) {
     return value;
 }
 
-/*
-//--- Esta seria la funcion para leer un string,
-//--- esta función si se quiere generalizar para colocar un label
-//--- y leer cualquier tipo de dato se tendría que convertir al template anterior
-
-string&& input(string label) {
- string value;
- cout << label;
- cin >> value;
- return move(value);
-}
-*/
 class Menu {
     TipoEntero opcion;
     Tierra tierra;
-    void imprimirMenu();
+    void mostrarMenu();
     void seleccionarOpcion();
     void agregarObjeto();
     void removerObjeto();
     void dibujarMapa();
 public:
-    Menu(): opcion{} {}
+    Menu(int largo, int altura);
     void ejecutar();
+    void buscar();
+    void MejoresTipo();
+    void MejoresTotal();
 };
 
-#endif //AGREGACION_MENU_H
+
+#endif //GAME_CONTROLADOR_H

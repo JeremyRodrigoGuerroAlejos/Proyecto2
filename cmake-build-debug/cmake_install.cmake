@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2
+# Install script for directory: C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/SFMLApp")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ProyectoFinalPOO")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

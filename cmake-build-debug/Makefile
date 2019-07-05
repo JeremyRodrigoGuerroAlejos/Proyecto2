@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2
+CMAKE_SOURCE_DIR = C:\Users\rodri\Desktop\Finales\CS1102-201901-PF-master\CS1102-201901-PF-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\rodri\Desktop\Finales\CS1102-201901-PF-master\CS1102-201901-PF-master\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rodri\Desktop\Finales\CS1102-201901-PF-master\CS1102-201901-PF-master\cmake-build-debug\CMakeFiles C:\Users\rodri\Desktop\Finales\CS1102-201901-PF-master\CS1102-201901-PF-master\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rodri\OneDrive\Documentos\GitHub\Proyecto2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rodri\Desktop\Finales\CS1102-201901-PF-master\CS1102-201901-PF-master\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ SFMLApp/fast:
 	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/build
 .PHONY : SFMLApp/fast
 
+Hotel.obj: Hotel.cpp.obj
+
+.PHONY : Hotel.obj
+
+# target to build an object file
+Hotel.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Hotel.cpp.obj
+.PHONY : Hotel.cpp.obj
+
+Hotel.i: Hotel.cpp.i
+
+.PHONY : Hotel.i
+
+# target to preprocess a source file
+Hotel.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Hotel.cpp.i
+.PHONY : Hotel.cpp.i
+
+Hotel.s: Hotel.cpp.s
+
+.PHONY : Hotel.s
+
+# target to generate assembly for a file
+Hotel.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Hotel.cpp.s
+.PHONY : Hotel.cpp.s
+
 Menu.obj: Menu.cpp.obj
 
 .PHONY : Menu.obj
@@ -149,6 +176,33 @@ Menu.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
+Museo.obj: Museo.cpp.obj
+
+.PHONY : Museo.obj
+
+# target to build an object file
+Museo.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Museo.cpp.obj
+.PHONY : Museo.cpp.obj
+
+Museo.i: Museo.cpp.i
+
+.PHONY : Museo.i
+
+# target to preprocess a source file
+Museo.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Museo.cpp.i
+.PHONY : Museo.cpp.i
+
+Museo.s: Museo.cpp.s
+
+.PHONY : Museo.s
+
+# target to generate assembly for a file
+Museo.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Museo.cpp.s
+.PHONY : Museo.cpp.s
+
 Objeto.obj: Objeto.cpp.obj
 
 .PHONY : Objeto.obj
@@ -175,6 +229,33 @@ Objeto.s: Objeto.cpp.s
 Objeto.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Objeto.cpp.s
 .PHONY : Objeto.cpp.s
+
+Restaurant.obj: Restaurant.cpp.obj
+
+.PHONY : Restaurant.obj
+
+# target to build an object file
+Restaurant.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Restaurant.cpp.obj
+.PHONY : Restaurant.cpp.obj
+
+Restaurant.i: Restaurant.cpp.i
+
+.PHONY : Restaurant.i
+
+# target to preprocess a source file
+Restaurant.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Restaurant.cpp.i
+.PHONY : Restaurant.cpp.i
+
+Restaurant.s: Restaurant.cpp.s
+
+.PHONY : Restaurant.s
+
+# target to generate assembly for a file
+Restaurant.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLApp.dir\build.make CMakeFiles/SFMLApp.dir/Restaurant.cpp.s
+.PHONY : Restaurant.cpp.s
 
 Tierra.obj: Tierra.cpp.obj
 
@@ -239,12 +320,21 @@ help:
 	@echo ... SFMLApp
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Hotel.obj
+	@echo ... Hotel.i
+	@echo ... Hotel.s
 	@echo ... Menu.obj
 	@echo ... Menu.i
 	@echo ... Menu.s
+	@echo ... Museo.obj
+	@echo ... Museo.i
+	@echo ... Museo.s
 	@echo ... Objeto.obj
 	@echo ... Objeto.i
 	@echo ... Objeto.s
+	@echo ... Restaurant.obj
+	@echo ... Restaurant.i
+	@echo ... Restaurant.s
 	@echo ... Tierra.obj
 	@echo ... Tierra.i
 	@echo ... Tierra.s

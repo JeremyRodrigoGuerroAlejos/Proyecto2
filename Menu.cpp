@@ -1,68 +1,128 @@
 //
-// Created by ruben on 6/10/19.
+// Created by utec on 21/06/19.
 //
 
+#include "Tierra.h"
 #include "Menu.h"
-#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
 #include <cstdio>
 
+
 using namespace std;
+enum class Opciones {
+    Agregar = 1, Remover , Mostrar, buscar, MejoresTotal, MejoresTipo};
+ // se usa un tipo enumerado para indicar las opciones
 
-enum class Opciones { Agregar=1, Remover, Mostrar};
 
+/*
+ ********************
+ *
+ * Funciones de Ayuda
+ *
+ ********************
+ */
 
 void limpiar() {
+#ifndef WIN32
     cout << "\033[2J\033[0;0H";
-    cout<<endl;
+#else
+    system("cls");
+#endif
 }
 
 void esperar() {
-    char w;
+    TipoCaracter w;
     do {
         w = input<TipoCaracter>("Presione C y Enter para continuar...");
-    }while (toupper(w) != 'C');
+    } while (toupper(w) != 'C');
 }
 
-void Menu::imprimirMenu() {
-    limpiar();
-    cout << "MENU\n";
-    cout << string(4, '-') << "\n\n";
-    cout << "1. Agregar un nuevo objeto\n";
-    cout << "2. Remover objeto\n";
-    cout << "3. Dibujar Mapa\n\n";
-    cout << "0. Para Salir\n\n";
-}
+/*
+ ******************************
+ *
+ * Metodos de clase Menu
+ *
+ ******************************
+ */
 
+Menu::Menu(int altura, int ancho): tierra(altura, ancho), opcion{} {}
 
 void Menu::agregarObjeto() {
-    auto    nombre = input<TipoString>("Ingrese Nombre : ");
-    auto color  = input<TipoCaracter>("Ingrese color (Un caracter): ");
-
-    auto x = input<TipoEntero>("Ingrese posicion X : ");
-
-
-    while (x < 0 || x >= tierra.getAncho()) {
-        cout << "Posicion X Incorrecta, los limites son: 0, "
-             << tierra.getAncho() - 1 << "\n";
-        x = input<TipoEntero>("Ingrese posicion X : ");
+    auto i = 1;
+    while (i==1){
+        auto tipo = input<TipoCaracter>("Ingrese caracter de objeto (R=Restaurante, H=Hotel, M=Museo): ");
+        if (tipo == 'R'){
+                auto nombre = input<TipoString>("Ingrese Nombre de Restaurante: ");
+                cout<<"Los Restaurantes son rojos"<<endl;
+                auto x = input<TipoEntero>("Ingrese posicion X : ");
+                while (x < 0 || x >= tierra.getAncho()) {
+                    cout << "Posicion X Incorrecta, los limites son: 0, "
+                    << tierra.getAncho() - 1 << "\n";
+                    x = input<TipoEntero>("Ingrese posicion X : ");
+                }
+                auto y = input<TipoEntero>("Ingrese posicion Y : ");
+                while (y < 0 || y >= tierra.getAncho()) {
+                    cout  << "Posicion Y Incorrecta, los limites son: 0, "
+                    << tierra.getAltura() - 1 << "\n";
+                    y = input<TipoEntero>("Ingrese posicion Y : ");
+                }
+                auto direccion = input<TipoString>("Ingrese Direccion : ");
+                auto calificacion = input<TipoEntero>("Ingrese Calificacion : ");
+                auto TipodeComida = input<TipoString>("Ingrese Tipo de Comida : ");
+                auto Especialidaddia = input<TipoString>("Ingrese Especialidad del dia : ");
+                tierra.adicionarObjeto(new Restaurant(nombre,'R',x,y,tipo,direccion,calificacion,
+                        TipodeComida,Especialidaddia));
+                i--;
+        } else if (tipo=='M'){
+            auto nombre = input<TipoString>("Ingrese Nombre de Museo: ");
+            cout<<"Los Museos son verdes"<<endl;
+            auto x = input<TipoEntero>("Ingrese posicion X : ");
+            while (x < 0 || x >= tierra.getAncho()) {
+                cout << "Posicion X Incorrecta, los limites son: 0, "
+                     << tierra.getAncho() - 1 << "\n";
+                x = input<TipoEntero>("Ingrese posicion X : ");
+            }
+            auto y = input<TipoEntero>("Ingrese posicion Y : ");
+            while (y < 0 || y >= tierra.getAncho()) {
+                cout  << "Posicion Y Incorrecta, los limites son: 0, "
+                      << tierra.getAltura() - 1 << "\n";
+                y = input<TipoEntero>("Ingrese posicion Y : ");
+            }
+            auto direccion = input<TipoString>("Ingrese Direccion : ");
+            auto calificacion = input<TipoEntero>("Ingrese Calificacion : ");
+            auto Exposicion = input<TipoString >("Ingrese Exposicion : ");
+            tierra.adicionarObjeto(new Museo(nombre,'G',x,y,tipo,direccion,calificacion, Exposicion));
+            i--;
+        } else if (tipo=='H'){
+            auto nombre = input<TipoString>("Ingrese Nombre de Hotel: ");
+            cout<<"Los Hoteles son azules"<<endl;
+            auto x = input<TipoEntero>("Ingrese posicion X : ");
+            while (x < 0 || x >= tierra.getAncho()) {
+                cout << "Posicion X Incorrecta, los limites son: 0, "
+                     << tierra.getAncho() - 1 << "\n";
+                x = input<TipoEntero>("Ingrese posicion X : ");
+            }
+            auto y = input<TipoEntero>("Ingrese posicion Y : ");
+            while (y < 0 || y >= tierra.getAncho()) {
+                cout  << "Posicion Y Incorrecta, los limites son: 0, "
+                      << tierra.getAltura() - 1 << "\n";
+                y = input<TipoEntero>("Ingrese posicion Y : ");
+            }
+            auto direccion = input<TipoString>("Ingrese Direccion : ");
+            auto calificacion = input<TipoEntero>("Ingrese Calificacion : ");
+            auto Estrellas = input<TipoEntero>("Ingrese Estrellas : ");
+            auto Disponibilidad = input<TipoString >("Ingrese Disponibilidad : ");
+            tierra.adicionarObjeto(new Hotel(nombre,'B',x,y,tipo,direccion,calificacion,
+                    Estrellas,Disponibilidad));
+            i--;
+        }
     }
-
-    TipoEntero y = input<TipoEntero>("Ingrese posicion Y : ");
-    while (y < 0 || y >= tierra.getAncho()) {
-        cout  << "Posicion Y Incorrecta, los limites son: 0, "
-              << tierra.getAltura() - 1 << "\n";
-        y = input<TipoEntero>("Ingrese posicion Y : ");
-    }
-
-    tierra.adicionarObjeto(new Objeto(nombre, color, x, y));
 }
 
 void Menu::removerObjeto() {
     auto nombre = input<TipoString>("Ingrese Nombre: ");
-
-    Objeto* obj = tierra.removerObjeto(nombre);
+    auto obj = tierra.removerObjeto(nombre);  //-- separa el objeto de la tierra
     if (obj == nullptr) {
         cout << "Objeto No existe\n";
     }
@@ -83,14 +143,21 @@ void Menu::dibujarMapa() {
     esperar();
 }
 
-void Menu::ejecutar() {
-    do {
-        imprimirMenu();
-        cin >> opcion;
-        seleccionarOpcion();
-    } while (opcion != 0);
-    cout << "Fin del programa...\n";
+
+
+void Menu::mostrarMenu() {
+    limpiar();
+    cout << "Menu\n";
+    cout << string(4, '-') << "\n\n";
+    cout << "1. Agregar un nuevo objeto\n";
+    cout << "2. Remover objeto\n";
+    cout << "3. Dibujar Mapa\n";
+    cout << "4. Buscar 3 objetos más cercanos\n";
+    cout << "5. Mostrar top 3 Hoteles, Restaurantes o Museos\n";
+    cout << "6. Mostrar top 3 de establecimientos\n\n";
+    cout << "0. Para Salir\n\n";
 }
+
 
 void Menu::seleccionarOpcion() {
     limpiar();
@@ -104,5 +171,48 @@ void Menu::seleccionarOpcion() {
         case  Opciones::Mostrar: // Dibujando Tierra
             dibujarMapa();
             break;
+        case Opciones::buscar: //buscar Objetos cercanos
+            buscar();
+            break;
+        case Opciones ::MejoresTipo://buscar Mejores de cada Tipo
+            MejoresTipo();
+            break;
+        case Opciones ::MejoresTotal://buscar los Maximo
+            MejoresTotal();
+            break;
     }
+}
+
+void Menu::ejecutar() {
+    do {
+        mostrarMenu();
+        cin >> opcion;
+        seleccionarOpcion();
+    } while (opcion != 0);
+    cout << "Fin del programa...\n";
+}
+
+void Menu::buscar(){
+    cout<<"Ingrese coordenadas a buscar"<<endl;
+    auto x = input<TipoEntero>("Posicion X a buscar: ");
+    while (x < 0 || x >= tierra.getAncho()) {
+        cout << "Posicion X Incorrecta, los limites son: 0, "
+             << tierra.getAncho() - 1 << "\n";
+        x = input<TipoEntero>("Ingrese posicion X : ");
+    }
+    auto y = input<TipoEntero>("Posicion Y a buscar: ");
+    while (y < 0 || y >= tierra.getAncho()) {
+        cout  << "Posicion Y Incorrecta, los limites son: 0, "
+              << tierra.getAltura() - 1 << "\n";
+        y = input<TipoEntero>("Ingrese posicion Y : ");
+    }
+    tierra.encontrar(x,y);
+}
+
+void Menu::MejoresTipo() {
+    tierra.UbicarMejoresTipos();
+}
+
+void Menu::MejoresTotal() {
+    tierra.Ubicar3max();
 }

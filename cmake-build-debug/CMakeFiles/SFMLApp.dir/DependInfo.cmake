@@ -4,10 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Menu.cpp" "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-debug/CMakeFiles/SFMLApp.dir/Menu.cpp.obj"
-  "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Objeto.cpp" "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-debug/CMakeFiles/SFMLApp.dir/Objeto.cpp.obj"
-  "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tierra.cpp" "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-debug/CMakeFiles/SFMLApp.dir/Tierra.cpp.obj"
-  "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/main.cpp" "C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-debug/CMakeFiles/SFMLApp.dir/main.cpp.obj"
+  "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/Hotel.cpp" "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/CMakeFiles/SFMLApp.dir/Hotel.cpp.obj"
+  "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/Menu.cpp" "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/CMakeFiles/SFMLApp.dir/Menu.cpp.obj"
+  "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/Museo.cpp" "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/CMakeFiles/SFMLApp.dir/Museo.cpp.obj"
+  "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/Objeto.cpp" "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/CMakeFiles/SFMLApp.dir/Objeto.cpp.obj"
+  "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/Restaurant.cpp" "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/CMakeFiles/SFMLApp.dir/Restaurant.cpp.obj"
+  "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/Tierra.cpp" "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/CMakeFiles/SFMLApp.dir/Tierra.cpp.obj"
+  "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/main.cpp" "C:/Users/rodri/Desktop/Finales/CS1102-201901-PF-master/CS1102-201901-PF-master/cmake-build-debug/CMakeFiles/SFMLApp.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
