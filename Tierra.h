@@ -40,6 +40,7 @@ public:
     void encontrar(TipoEntero x, TipoEntero y);
     void Ubicar3max();
     void UbicarMejoresTipos();
+    void imprimir();
 };
 
 

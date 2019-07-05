@@ -11,7 +11,7 @@
 
 using namespace std;
 enum class Opciones {
-    Agregar = 1, Remover , Mostrar, buscar, MejoresTotal, MejoresTipo};
+    Agregar = 1, Remover , Mostrar, buscar, MejoresTotal, MejoresTipo, MostrarTodo};
  // se usa un tipo enumerado para indicar las opciones
 
 
@@ -154,7 +154,8 @@ void Menu::mostrarMenu() {
     cout << "3. Dibujar Mapa\n";
     cout << "4. Buscar 3 objetos más cercanos\n";
     cout << "5. Mostrar top 3 Hoteles, Restaurantes o Museos\n";
-    cout << "6. Mostrar top 3 de establecimientos\n\n";
+    cout << "6. Mostrar top 3 de establecimientos\n";
+    cout << "7. Imprimir todos los establecimientos\n\n";
     cout << "0. Para Salir\n\n";
 }
 
@@ -179,6 +180,9 @@ void Menu::seleccionarOpcion() {
             break;
         case Opciones ::MejoresTotal://buscar los Maximo
             MejoresTotal();
+            break;
+        case Opciones ::MostrarTodo://muestra todos los puntos
+            MostrarTodo();
             break;
     }
 }
@@ -215,4 +219,8 @@ void Menu::MejoresTipo() {
 
 void Menu::MejoresTotal() {
     tierra.Ubicar3max();
+}
+
+void Menu::MostrarTodo() {
+    tierra.imprimir();
 }

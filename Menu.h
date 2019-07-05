@@ -38,6 +38,7 @@ public:
     void buscar();
     void MejoresTipo();
     void MejoresTotal();
+    void MostrarTodo();
 };
 
 

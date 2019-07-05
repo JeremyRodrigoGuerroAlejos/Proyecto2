@@ -111,10 +111,10 @@ void Tierra::dibujarTierra() {
 }
 
 void Tierra::encontrar(TipoEntero x, TipoEntero y) {
-    vector<Raices > aux1;
-    vector<TipoString> aux2;
+    vector<Raices > aux1={};
+    vector<TipoString> aux2={};
     for(Objeto* i:objetos){
-        aux1.push_back(sqrt(((i->getPosX())^2)*((i->getPosY())^2)));
+        aux1.push_back(sqrt(((i->getPosX())-x)^2+((i->getPosY())-y)^2));
         aux2.push_back(i->getNombre());
     }
     float temporal;
@@ -138,8 +138,8 @@ void Tierra::encontrar(TipoEntero x, TipoEntero y) {
 }
 
 void Tierra::Ubicar3max() {
-    vector<TipoEntero > aux1;
-    vector<TipoString> aux2;
+    vector<TipoEntero > aux1={};
+    vector<TipoString> aux2={};
     for (Objeto *i:objetos) {
         aux1.push_back(i->getCalificacion());
         aux2.push_back(i->getNombre());
@@ -220,5 +220,19 @@ void Tierra::capturarEventos() {
                     plano->close();
                 break;
         }
+    }
+}
+
+void Tierra::imprimir() {
+    int i = 0;
+    for (auto &item: objetos) {
+        cout << "* * * * * * [" << i << "] ";
+        cout << " Nombre = " << item->getNombre() << " "
+             << item->mostrarPosicion()
+             << " Color = " << item->getColor() << " "
+             << "Calificacion = "<< item->getCalificacion() << " "
+             << "Dirección = " << item->getDireccion() << " "
+             <<'\n';
+        i++;
     }
 }
