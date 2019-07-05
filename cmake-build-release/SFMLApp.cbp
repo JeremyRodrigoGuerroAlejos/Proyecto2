@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SFMLApp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\SFML-2.5.1\;CMake Files\SFML-2.5.1\lib\;CMake Files\SFML-2.5.1\lib\cmake\;CMake Files\SFML-2.5.1\lib\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SFMLApp">
+				<Option output="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/SFMLApp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML_INCLUDE_DIR"/>
+					<Add directory="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 SFMLApp"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SFMLApp/fast">
+				<Option output="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/SFMLApp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML_INCLUDE_DIR"/>
+					<Add directory="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 SFMLApp/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Menu.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Menu.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Objeto.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Objeto.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tierra.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tierra.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/Tipos.h">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/main.cpp">
+			<Option target="SFMLApp"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/rodri/OneDrive/Documentos/GitHub/Proyecto2/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
